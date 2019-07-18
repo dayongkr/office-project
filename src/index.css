@@ -1,13 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  width: 1680px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  color: #2c3e50;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: rgb(25, 30, 47);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#sidebar #profile {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#sidebar #profileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url('./images/profile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#sidebar #profileDetails {
+  margin-top: 8px;
+}
+
+#sidebar #profileName {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+#sidebar #profileSummary {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+#sidebar li {
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 1rem;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+#sidebar li.selected {
+  background-color: rgb(19, 22, 32);
+  color: white;
+  font-weight: bold;
+}
+
+#content {
+  width: 1430px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 250px;
+  overflow: auto;
+}
+
+#todoWrap {
+  width: 100%;
+  background-color: #f1c40f;
+}
+
+.title {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.3rem;
+  background-color: #e74c3c;
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+.clock {
+  font-size: 0.8rem;
+  color: #666;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  font-weight: bold;
+}
+
+#content .content {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+}
+
+#todoInput {
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  background-color: #f1c40f;
+  padding: 1rem;
+  color: #2c3e50;
+}
+
+#todoList {
+  margin-top: 10px;
+}
+
+.todoItem {
+  background-color: #ecf0f1;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 5px;
+  position: relative;
+}
+
+.todoItem:hover .todoItemAgo {
+  display: inline-block;
+}
+
+.todoItemContent {
+  word-break: break-all;
+  word-wrap: break-word;
+  line-height: 1.3rem;
+}
+
+.todoItemAgo {
+  display: none;
+  font-size: 0.8rem;
+  color: rgba(44, 62, 80, 0.5);
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
 }

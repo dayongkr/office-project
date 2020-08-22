@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/office-project/static/css/main.ec5aed88.chunk.css",
+    "main.js": "/office-project/static/js/main.2757d1e2.chunk.js",
+    "main.js.map": "/office-project/static/js/main.2757d1e2.chunk.js.map",
+    "runtime~main.js": "/office-project/static/js/runtime~main.2d49f4c0.js",
+    "runtime~main.js.map": "/office-project/static/js/runtime~main.2d49f4c0.js.map",
+    "static/js/2.fce847c4.chunk.js": "/office-project/static/js/2.fce847c4.chunk.js",
+    "static/js/2.fce847c4.chunk.js.map": "/office-project/static/js/2.fce847c4.chunk.js.map",
+    "index.html": "/office-project/index.html",
+    "precache-manifest.072b16d8ad07d6b245cf0f0734d0952a.js": "/office-project/precache-manifest.072b16d8ad07d6b245cf0f0734d0952a.js",
+    "service-worker.js": "/office-project/service-worker.js",
+    "static/css/main.ec5aed88.chunk.css.map": "/office-project/static/css/main.ec5aed88.chunk.css.map",
+    "static/media/index.css": "/office-project/static/media/profile.c4948820.jpg"
+  }
+}
